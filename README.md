@@ -1,10 +1,16 @@
-# ⚙️ TaskAuto - Backend (API)
+<h2>
+  <img src="https://cdn.simpleicons.org/task" width="20" />
+  TaskAuto - Backend (API)
+</h2>
 
 Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de um microsserviço RESTful construído com **Java e Spring Boot**, responsável por gerenciar o armazenamento das anotações e a integração direta com o motor de Inteligência Artificial para processamento de linguagem natural. O projeto foi desenhado para rodar localmente de forma simples, sem necessidade de autenticação.
 
 ---
 
-## ✨ Arquitetura e Funcionalidades
+<h2>
+  <img src="https://cdn.simpleicons.org/jira" width="20" />
+  Arquitetura e Funcionalidades
+</h2>
 
 - **Uso Local sem Autenticação:** A aplicação roda localmente na sua máquina, garantindo privacidade dos dados, e não exige criação de conta ou login.
 - **Processamento NLP:** Integração com um servidor local Ollama (rodando LLMs) para estruturar textos não-formatados recebidos do usuário em Tarefas, Metas ou Relatórios Diários com datas inferidas e ações detalhadas.
@@ -12,7 +18,10 @@ Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de u
 
 ---
 
-## 🛠️ Tecnologias e Stack
+<h2>
+  <img src="https://cdn.simpleicons.org/stackshare" width="20" />
+  Tecnologias e Stack
+</h2>
 
 - **Linguagem:** Java 17+
 - **Framework Principal:** Spring Boot 3
@@ -22,7 +31,10 @@ Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de u
 
 ---
 
-## 🚀 Requisitos e Configuração (Docker)
+<h2>
+  <img src="https://cdn.simpleicons.org/docker" width="20" />
+  Requisitos e Configuração (Docker)
+</h2>
 
 Independente da opção de execução escolhida abaixo, o sistema depende de um Banco de Dados e da IA Ollama. Nós fornecemos um arquivo `docker-compose.yml` para subir esses serviços facilmente.
 
@@ -42,7 +54,7 @@ docker-compose up -d
 ```
 
 > [!WARNING]
-> **⚠️ IMPORTANTE - OLLAMA SETUP:**
+> **OLLAMA SETUP:**
 > Ao subir o Docker Compose, o contêiner `ollama-setup` começará a fazer o download (pull) do modelo de IA definido na variável `OLLAMA_IA`. **Você precisa aguardar este contêiner finalizar o download para que o sistema funcione corretamente.**
 > 
 > Você pode acompanhar o progresso verificando os logs do Docker:
@@ -52,7 +64,7 @@ docker-compose up -d
 
 ---
 
-## 📦 Opções de Execução
+<h2><img src="https://cdn.simpleicons.org/gnubash" width="20" /> Opções de Execução</h2>
 
 Você pode rodar a aplicação de duas maneiras, dependendo da sua familiaridade com Java:
 
@@ -92,7 +104,10 @@ Ideal se você deseja modificar o código ou contribuir.
 
 ---
 
-## 🔑 Endpoints Principais
+<h2>
+  <img src="https://cdn.simpleicons.org/swagger" width="20" />
+  Endpoints Principais
+</h2>
 
 A API é prefixada com `/api` e não necessita de tokens de autorização (`Authorization` header).
 
