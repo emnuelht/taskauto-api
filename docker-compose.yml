@@ -1,0 +1,32 @@
+services:
+  ollama:
+    image: ollama/ollama
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    restart: unless-stopped
+
+  ollama-setup:
+    image: ollama/ollama
+    container_name: ollama-setup
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    entrypoint: >
+      /bin/sh -c "
+        sleep 5 &&
+        ollama pull ${OLLAMA_IA}
+      "
+    restart: no
+
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_DB: taskautodb
+      POSTGRES_USER: ${POSTGRES_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
