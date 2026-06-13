@@ -7,10 +7,7 @@ Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de u
 
 ---
 
-<h2>
-  <img src="https://cdn.simpleicons.org/jira" width="20" />
-  Arquitetura e Funcionalidades
-</h2>
+## Arquitetura e Funcionalidades
 
 - **Uso Local sem Autenticação:** A aplicação roda localmente na sua máquina, garantindo privacidade dos dados, e não exige criação de conta ou login.
 - **Processamento NLP:** Integração com um servidor local Ollama (rodando LLMs) para estruturar textos não-formatados recebidos do usuário em Tarefas, Metas ou Relatórios Diários com datas inferidas e ações detalhadas.
@@ -18,10 +15,7 @@ Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de u
 
 ---
 
-<h2>
-  <img src="https://cdn.simpleicons.org/stackshare" width="20" />
-  Tecnologias e Stack
-</h2>
+## Tecnologias e Stack
 
 - **Linguagem:** Java 17+
 - **Framework Principal:** Spring Boot 3
@@ -31,10 +25,7 @@ Este é o repositório do backend para a aplicação **TaskAuto**. Trata-se de u
 
 ---
 
-<h2>
-  <img src="https://cdn.simpleicons.org/docker" width="20" />
-  Requisitos e Configuração (Docker)
-</h2>
+## Requisitos e Configuração (Docker)
 
 Independente da opção de execução escolhida abaixo, o sistema depende de um Banco de Dados e da IA Ollama. Nós fornecemos um arquivo `docker-compose.yml` para subir esses serviços facilmente.
 
@@ -64,7 +55,7 @@ docker-compose up -d
 
 ---
 
-<h2><img src="https://cdn.simpleicons.org/gnubash" width="20" /> Opções de Execução</h2>
+## Opções de Execução
 
 Você pode rodar a aplicação de duas maneiras, dependendo da sua familiaridade com Java:
 
@@ -104,10 +95,7 @@ Ideal se você deseja modificar o código ou contribuir.
 
 ---
 
-<h2>
-  <img src="https://cdn.simpleicons.org/swagger" width="20" />
-  Endpoints Principais
-</h2>
+## Endpoints Principais
 
 A API é prefixada com `/api` e não necessita de tokens de autorização (`Authorization` header).
 
